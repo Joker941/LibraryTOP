@@ -27,6 +27,7 @@ body {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--third-color);
     box-shadow: 0 0 10px var(--third-color); 
+    
 }
 
 .booksContainer {
@@ -84,8 +85,45 @@ body {
     background-color: var(--main-color);
     border: 1px solid var(--text-color);
 }
+
 .addBook {
-    background-color: aquamarine;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
     position: absolute;
+    top: 25%;
+    left: 25%;
     z-index: -1;
+    width: 50%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+input, select {
+    border: none;
+}
+.addBook>input, .addBook>select, .addBook>div {
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+.addBook>div {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--text-color);
+}
+
+.addBook>div:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--main-color);
+}
+#title:focus, #author:focus, #pages:focus, #read:focus {
+    box-shadow: 0 0 20px var(--secondary-color);
 }

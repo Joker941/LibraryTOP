@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+
     <script src="./app-library.js" defer></script>
     <title>Library</title>
 </head>
@@ -17,14 +18,15 @@
 
         <div class="addBook">
 
-            <input type="text" name="title" placeholder="title">
-            <input type="text" name="author" placeholder="author">
-            <input type="text" name="pages" placeholder="Number of pages">
+            <input type="text" name="title" placeholder="title" id="title">
+            <input type="text" name="author" placeholder="author" id="author">
+            <input type="text" name="pages" placeholder="Number of pages" id="pages">
             <select name="read" id="read">
                 <option value="other">Did you read it ?</option>
                 <option value="true">Yes, i did !</option>
                 <option value="false">No, i didn't.</option>
             </select>
+            <div class="addBookToLibrary">Add book</div>
         </div>
         
         <div class="booksContainer">
